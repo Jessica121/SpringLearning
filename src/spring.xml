@@ -8,7 +8,25 @@
 	<!-- constructor injection -->
 		<!-- <constructor-arg value = "equi" type = "java.lang.String"/> -->
 		<!-- <constructor-arg value = "10" type = "int" /> -->
-		<constructor-arg value = "equi" index = "0"/>
-		<constructor-arg value = "10" index = "1" />
+		<!-- <constructor-arg value = "equi" index = "0"/>
+		<constructor-arg value = "10" index = "1" /> -->
+		<property name = "p1" ref="pointOne"/>
+		<property name = "p2" ref="pointTwo"/>
+		<property name = "p3" ref="pointThree"/>
+	</bean>
+	
+	<bean id = "pointOne" class = "Rongrong.Point">
+		<property name="x" value = "0"/>
+		<property name="y" value = "0"/>
+	</bean>
+	
+	<bean id = "pointTwo" class = "Rongrong.Point">
+		<property name="x" value = "-3"/>
+		<property name="y" value = "-4"/>
+	</bean>
+	
+	<bean id = "pointThree" class = "Rongrong.Point">
+		<property name="x" value = "3"/>
+		<property name="y" value = "4"/>
 	</bean>
 </beans>
