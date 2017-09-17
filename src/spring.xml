@@ -35,7 +35,7 @@
 		</property> -->
 	</bean>
 	
-	<bean id = "p1" class = "Rongrong.Point">
+	<bean id = "p1" class = "Rongrong.Point" scope = "prototype">
 		<property name="x" value = "0"/>
 		<property name="y" value = "0"/>
 	</bean>
