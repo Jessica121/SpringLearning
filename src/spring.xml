@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
-	<bean id="tri" class="Rongrong.Triangle">
+	<bean id="tri" class="Rongrong.Triangle"	autowire="byName">
 	<!-- setter injection -->
 	<!-- <property name = "type" value = "equi"/> -->
 	<!-- String -->
@@ -26,29 +26,29 @@
 		</property> -->
 		
 		<!-- collection -->
-		<property name="l">
+<!-- 		<property name="l">
 			<list>
 				<ref bean = "pointOne"/>
 				<ref bean = "pointTwo"/>
 				<ref bean = "pointThree"/>
 			</list>
-		</property>
+		</property> -->
 	</bean>
 	
-	<bean id = "pointOne" class = "Rongrong.Point">
+	<bean id = "p1" class = "Rongrong.Point">
 		<property name="x" value = "0"/>
 		<property name="y" value = "0"/>
 	</bean>
 	
-	<bean id = "pointTwo" class = "Rongrong.Point">
+	<bean id = "p2" class = "Rongrong.Point">
 		<property name="x" value = "-3"/>
 		<property name="y" value = "-4"/>
 	</bean>
 	
-	<bean id = "pointThree" class = "Rongrong.Point">
+	<bean id = "p3" class = "Rongrong.Point">
 		<property name="x" value = "3"/>
 		<property name="y" value = "4"/>
 	</bean> 
 	
-	<alias name="tri" alias="triToo"/>
+	<!-- <alias name="tri" alias="triToo"/> -->
 </beans>

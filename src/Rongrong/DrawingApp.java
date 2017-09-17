@@ -12,8 +12,9 @@ public class DrawingApp {
 		// TODO Auto-generated method stub
 //		Triangle tri = new Triangle();
 //		BeanFactory factory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
+//		creates all the beans in xml first
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-		Triangle tri = (Triangle) context.getBean("triToo");
+		Triangle tri = (Triangle) context.getBean("tri");
 		tri.draw();
 	 
 	}
